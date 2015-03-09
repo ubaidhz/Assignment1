@@ -1,0 +1,100 @@
+html{
+	border-style: solid none none;
+	border-width: 24px medium medium;
+	border-color: #333;
+	box-shadow: 10px 4px 7px #625a5a;
+	margin:1%;
+	 
+}
+body{
+	background: url("images/paper.png");
+	width: 100%;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:16px;
+	margin: 0 auto;
+	padding: 20px;
+	min-height: 1075px;
+	
+}
+h1, h2, h3{
+	font-family: "BebasNeueRegular", "HelveticaNeue", sans-serif;
+	text-shadow: 1px 1px 1px #f4efef;
+}
+
+/* First container with name and personal details */
+.wrapper{
+	background-color: #efefef;
+	margin: 0 auto; 
+	box-shadow: 5px 3px 3px #fff;
+	display: block;
+	width:28%;
+	float: left;
+	margin-left: 40px;
+	min-height: 775px;
+	overflow: hidden;
+}
+
+img{
+	max-width: 60px;
+	margin-left: 40%;
+}
+
+li{
+	list-style: none;
+}
+.container ul li h1, h2, p{
+	color: #39a6ff;
+}
+.location{
+	list-style: none;
+	display: block;
+	padding-left:0px;
+	margin-left: 0px;
+
+}
+.personal-details li{
+	clear: both;
+}
+
+
+/* 2nd container with work history and education */
+.wrapper2{
+	background-color: #f0f3f6;
+	margin: 0 auto;
+	box-shadow: 5px 3px 3px #fff;
+	display: block;
+	width:28%;
+	float: left;
+	margin-left: 40px;
+	min-height: 1075px;
+	overflow: hidden;
+}
+.container2 li{
+	list-style: none;
+	color: white; 
+}
+
+/* ------------------------------------------*/
+.wrapper3{
+	background-color: #f7fcfd;
+	margin: 0 auto;
+	box-shadow: 5px 3px 3px #fff;
+	display: block;
+	width:28%;
+	float: left;
+	margin-left: 40px;
+	min-height: 1075px;
+	overflow: hidden;
+}
+
+
+------------------------------------------*/
+
+.clearfix:after {
+	content:".";
+	display:block;
+	height: 0;
+	clear:both;
+	visibility:hidden;
+
+}
