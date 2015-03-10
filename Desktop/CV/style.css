@@ -1,10 +1,12 @@
+*{
+	box-sizing:border-box;
+}
 html{
 	border-style: solid none none;
 	border-width: 24px medium medium;
 	border-color: #333;
 	box-shadow: 10px 4px 7px #625a5a;
-	margin:1%;
-	 
+	margin:1%; 
 }
 body{
 	background: url("images/paper.png");
@@ -12,50 +14,82 @@ body{
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size:16px;
 	margin: 0 auto;
-	padding: 20px;
-	min-height: 1075px;
+	padding: 20px; /*implemented for body shadow*/
+	min-height: 1294px;
 	
 }
 h1, h2, h3{
 	font-family: "BebasNeueRegular", "HelveticaNeue", sans-serif;
 	text-shadow: 1px 1px 1px #f4efef;
-}
+	margin: 0px;
 
-/* First container with name and personal details */
-.wrapper{
-	background-color: #efefef;
-	margin: 0 auto; 
-	box-shadow: 5px 3px 3px #fff;
-	display: block;
-	width:28%;
-	float: left;
-	margin-left: 40px;
-	min-height: 775px;
-	overflow: hidden;
 }
-
+/*Border line test
+.line{
+	margin-top:3em;
+	padding-top:-7em;
+	padding-bottom: .2em;
+	width:100%;
+	margin: opx auto;
+	background: url("images/line.png"); no-repeat scroll center top transparent;
+}
+*/
 img{
-	max-width: 60px;
-	margin-left: 40%;
+	width:100%;   /*describe width and max-width/height margin-left:60%;*/
+	margin: auto;
+	box-shadow: 10px 4px 7px #625a5a;
 }
-
+/*------------Navigation-------------*/
 li{
 	list-style: none;
+	padding-top: 5px;
 }
-.container ul li h1, h2, p{
+.container ul li, p{
+	color: #231F20/* #39a6ff */;
+}
+h1,h2{
 	color: #39a6ff;
+	text-align: center;
 }
+.container2 li{
+	width: 48%;
+	 border:2px solid orange;
+}
+
 .location{
 	list-style: none;
 	display: block;
 	padding-left:0px;
 	margin-left: 0px;
-
+	list-style: none;
+	color: black;
 }
-.personal-details li{
-	clear: both;
+/*Personal details alignment*/
+/*Profile and date alignment*/
+.block-details,
+{
+	width:100%;
 }
-
+.profile-block,
+{
+	float: left;
+	width:45%;
+}
+.date-block{
+	width:45%;
+}
+/* First container with name and personal details */
+.wrapper{
+	
+	background-color: #efefef;
+	margin: 0 auto; 
+	box-shadow: 5px 3px 3px #fff;
+	display: block;
+	float: left;
+	margin-left: 40px;
+	/*overflow: hidden;*/
+	padding-bottom:5em;
+}
 
 /* 2nd container with work history and education */
 .wrapper2{
@@ -63,32 +97,30 @@ li{
 	margin: 0 auto;
 	box-shadow: 5px 3px 3px #fff;
 	display: block;
-	width:28%;
 	float: left;
 	margin-left: 40px;
-	min-height: 1075px;
-	overflow: hidden;
-}
-.container2 li{
-	list-style: none;
-	color: white; 
+	/*overflow: hidden;*/
+	max-height:1262px;
 }
 
 /* ------------------------------------------*/
 .wrapper3{
-	background-color: #f7fcfd;
+	background-color: /* #f7fcfd */#94DAC8;
 	margin: 0 auto;
 	box-shadow: 5px 3px 3px #fff;
 	display: block;
-	width:28%;
 	float: left;
 	margin-left: 40px;
-	min-height: 1075px;
-	overflow: hidden;
+	/*overflow: hidden;*/
+	max-height:1262px;
+}
+.wrapper,
+.wrapper2,
+.wrapper3{
+	padding: 0 20px;
 }
 
-
-------------------------------------------*/
+/*------------------Clearfix------------------------*/
 
 .clearfix:after {
 	content:".";
@@ -97,4 +129,14 @@ li{
 	clear:both;
 	visibility:hidden;
 
+}
+/* Media Queries*/
+@media all and (min-width: 900px) {
+ 
+	 .wrapper, 
+	 .wrapper2, 
+	 .wrapper3 {
+	 	width:29.5%;
+	 	min-height: 1262px;
+	 }
 }
